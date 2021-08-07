@@ -14,7 +14,7 @@ function App() {
   
   return (
     <Box
-      bg={isDark ? "black" : "yellow.300"}
+      bg={isDark ? "black" : "white"}
       h="1000px"
     >
     <Header toggleColorMode={toggleColorMode} isDark={isDark} />

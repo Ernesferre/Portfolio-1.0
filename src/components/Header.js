@@ -1,7 +1,8 @@
-import { HStack, Spacer } from '@chakra-ui/react'
+import { HStack, Link, Spacer } from '@chakra-ui/react'
 import React from 'react'
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Image, Box, VStack, Heading, Text, Grid, IconButton } from "@chakra-ui/react"
+// import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { FaSun , FaMoon, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Header = ({toggleColorMode, isDark}) => {
@@ -11,35 +12,50 @@ const Header = ({toggleColorMode, isDark}) => {
 
 
     return (
-        <HStack mt={0} mb="3" mr="6" p={4}>
+        <HStack mt={0} mb="3" mr="6" p={4} spacing={5}>
             
             <IconButton
                 ml="4"
                 icon={isDark ? <FaSun /> : <FaMoon /> }
                 isRound="true"
                 onClick={ toggleColorMode }
-                color={isDark ? 'yellow' : "black"}
+                color={isDark ? 'black' : "yellow.300"}
                 alignSelf="flex-start"
+                bg={isDark ? "yellow.300" : "black"}
                 
                 >       
             </IconButton>
             
             <Spacer> </Spacer>
-            <IconButton
+            
+            <Link
                 isRound="true"
-                icon={<FaGithub />}
+                // icon={<FaGithub />}
                 ml="6"
+                fontSize="x-large"
                 href="https://github.com/Ernesferre"
                 isExternal
             >
-            </IconButton>
+                <FaGithub />
+            </Link>
 
-            <IconButton
+            <Link
+                isRound="true"
+                // icon={<FaGithub />}
+                ml="6"
+                fontSize="x-large"
+                href="https://www.linkedin.com/in/ernes-ferreyra/"
+                isExternal
+            >
+                <FaLinkedin />
+            </Link>
+
+            {/* <IconButton
                 isRound="true"
                 icon={<FaLinkedin />}
                 ml="2"
             >
-            </IconButton>
+            </IconButton> */}
 
 
 
