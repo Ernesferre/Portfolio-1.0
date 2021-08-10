@@ -2,10 +2,12 @@ import React from 'react'
 import { Box, Button, SimpleGrid} from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 // import { Link } from "react-router-dom"
+import Fade from 'react-reveal/Fade';
 
 
 const Sections = () => {
     return (
+        <Fade>
         <Box
             alignSelf="center"
             bg="white"
@@ -25,7 +27,8 @@ const Sections = () => {
                 >
                 <Button
                     boxShadow="md" 
-                    p="6" rounded="md" 
+                    p="6" 
+                    rounded="md" 
                     bg="yellow.600" color="black" 
                     letterSpacing="10px" 
                     
@@ -102,6 +105,7 @@ const Sections = () => {
             </SimpleGrid>
             
         </Box>
+        </Fade>
     )
 }
 

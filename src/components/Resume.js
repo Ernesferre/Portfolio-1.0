@@ -1,9 +1,11 @@
 import { Box, Link, Image, Container } from '@chakra-ui/react'
 import cv from '../assets/cv.PNG'
 import React from 'react'
+import Bounce from 'react-reveal/Bounce';
 
 const Resume = () => {
     return (
+        <Bounce top>
         <Container
             placeItems="center"
             mt={8}
@@ -23,6 +25,7 @@ const Resume = () => {
             
             </Link>
         </Container>
+        </Bounce>
     )
 }
 

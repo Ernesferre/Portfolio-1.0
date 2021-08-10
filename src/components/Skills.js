@@ -2,10 +2,12 @@ import React from 'react'
 import { Box, Heading, HStack, Flex, SimpleGrid, IconButton, Image, VStack, Text} from '@chakra-ui/react'
 import { FaReact, FaHtml5, FaGithub, FaBootstrap } from 'react-icons/fa'
 import { IoLogoJavascript } from 'react-icons/io';
+import Zoom from 'react-reveal/Zoom';
 
 
 const Skills = () => {
     return (
+        <Zoom>
         <Box
             textAlign="center"
             mt={8}
@@ -14,12 +16,12 @@ const Skills = () => {
             m={2}
             
         >
-            <Heading
+            {/* <Heading
                 color="black"
                 mb={6}
             >
                 Skills
-            </Heading>
+            </Heading> */}
 
             <SimpleGrid
                 columns={{ sm: 2, md: 5 }}
@@ -98,6 +100,7 @@ const Skills = () => {
 
 
         </Box>
+        </Zoom>
     )
 }
 

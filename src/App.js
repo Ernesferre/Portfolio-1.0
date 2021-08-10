@@ -21,7 +21,7 @@ function App() {
   
   return (
     <Box
-    bg="white"
+      bg="white"
     >
     
     

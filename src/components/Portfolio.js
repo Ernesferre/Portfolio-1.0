@@ -1,7 +1,8 @@
 import { Box, Heading, HStack, Flex } from '@chakra-ui/react'
 import React from 'react'
-import Card from '../components/Card'
+import Card2 from '../components/Card2'
 import { Proyectos } from './Proyectos'
+import Zoom from 'react-reveal/Zoom';
 
 const Portfolio = (props) => {
     
@@ -14,6 +15,7 @@ const Portfolio = (props) => {
     
     
     return (
+        <Zoom>
         <Box
             textAlign="center"
             mt={8}
@@ -22,12 +24,12 @@ const Portfolio = (props) => {
             m={2}
             
         >
-            <Heading
+            {/* <Heading
                 color="black"
                 mb={6}
             >
                 Portfolio
-            </Heading>
+            </Heading> */}
 
             
                 <Flex 
@@ -36,7 +38,7 @@ const Portfolio = (props) => {
                 >   
                         {Proyectos.map((item) =>  
                         <Flex>
-                            <Card 
+                            <Card2 
                                 isDark={isDark}
                                 key={item.id} {...item}
                         />
@@ -45,6 +47,7 @@ const Portfolio = (props) => {
                 </Flex>
             
         </Box>
+        </Zoom>
     )
 }
 
