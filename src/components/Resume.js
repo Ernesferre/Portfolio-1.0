@@ -8,6 +8,7 @@ const Resume = () => {
             placeItems="center"
             mt={8}
             mb={4}
+            
         >
             <Link
                 href="https://drive.google.com/file/d/1RpORj2yogxKt6sgouwdo1ORyxk4fWOCo/view?usp=sharing"
