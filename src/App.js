@@ -1,10 +1,17 @@
-import Ernesto from './assets/Ernesto.jpg';
-import { useColorMode } from "@chakra-ui/color-mode";
-import { Image, Box, VStack, Heading, Text, Grid, IconButton } from "@chakra-ui/react"
+
+
+import {BrowserRouter,Switch,Route, Link} from "react-router-dom";
 import './App.css';
 import { FaSun , FaMoon } from 'react-icons/fa';
-import Header from './components/Header';
+import { useColorMode } from "@chakra-ui/color-mode";
+// import Header from './components/Header';
+// import Sections from './components/Sections';
 import Profile from './components/Profile';
+import Portfolio from './components/Portfolio';
+import Skills from './components/Skills';
+import Resume from './components/Resume';
+import Presentation from './components/Presentation';
+import { Box, Container } from "@chakra-ui/react";
 
 
 function App() {
@@ -14,50 +21,40 @@ function App() {
   
   return (
     <Box
-      bg={isDark ? "black" : "white"}
-      h="1000px"
+    bg="white"
     >
-    <Header toggleColorMode={toggleColorMode} isDark={isDark} />
     
-    <Grid 
-      
-      placeItems="center"
-      p={3}
-      
-      
-    > 
-      <Image
-        borderRadius="full"
-        width="200px"
-        border="10px"
-        
-        bordercolor="brown"
-        isRound="true"
-        src={Ernesto}
-        alt="Ernesto"
-        boxShadow="dark-lg"
-        mb={2}
-      />
-      <VStack>
-        <Heading 
-          color={isDark ? "yellow.600" : 'black'}
-          
-          letterSpacing="widest"
-          fontFamily="unset"
-        > 
-        Ernesto Ferreyra
-        </Heading>
+    
 
-        <Text 
-          color="yellow.600"
-          fontSize="xl"
-        > 
-          Front-End Developer </Text>
-      </VStack>
+        <BrowserRouter>
+
+        <Presentation />
+
+          <Switch>
+
+            
+
+            <Route exact path="/profile">
+              <Profile />
+            </Route>
+
+            <Route path="/portfolio">
+              <Portfolio isDark={isDark} />
+            </Route>
+
+            <Route path="/skills">
+              <Skills />
+            </Route>
+
+            <Route path="/resume">
+              <Resume />
+            </Route>
+
+          </Switch>
+
+        </BrowserRouter>
       
-      
-    </Grid>
-    <Profile />
+
     </Box>
     
   );
