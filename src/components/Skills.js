@@ -33,7 +33,7 @@ const Skills = () => {
                     color="black"   
                 >
                     <Text>
-                        React
+                        React Js
                     </Text>
                     
                     <FaReact
