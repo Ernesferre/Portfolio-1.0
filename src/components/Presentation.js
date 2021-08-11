@@ -9,11 +9,18 @@ import Jump from 'react-reveal/Jump'
 import Swing from 'react-reveal/Swing'
 
 const Presentation = () => {
+
+    const handleStart = () => {
+            console.log("hola")
+    }
     
     const {colorMode, toggleColorMode} = useColorMode();
     const isDark = colorMode === "dark";
     
     return (
+
+        
+    
         <>
         
         <Box
@@ -28,28 +35,36 @@ const Presentation = () => {
                 p={3}    
             > 
             <Jump>
-                <Image
+                <Heading
+                    border="2px"
+                    borderRadius="full"
+                    borderColor={isDark ? "black" : 'black'}
+                    bg="yellow.600"
+                    color='black'
+                    p={6}
+                    mb={2}
+                    letterSpacing={7}
+                    shadow="dark-lg"
+                    fontFamily="cursive"
+                    size="3xl"
+                    onClick={handleStart}
+                    
+                >
+                    EF
+                </Heading>
+
+                {/* <Image
                 
                     borderRadius="full"
                     width="200px"
                     border="10px"
-
-                    // animation-name= "react-reveal-192063184920716-1"
-                    // animation-fill-mode= "both"
-                    // animation-duration= '1000ms' 
-                    // animation-delay= '0ms'
-                    // animation-iteration-count= "1"
-                    // box-shadow="0 0 11px 1px hsla(0,5.1%,69%,.75)"
-                    // transition="ease-in-out"
-                    // transitionDuration="9000"
-                    // animation="ease-out"
                     bordercolor="brown"
                     isRound="true"
                     src={Ernesto}
                     alt="Ernesto"
                     boxShadow="dark-lg"
                     mb={2}
-                />
+                /> */}
             </Jump>
             
 
@@ -67,7 +82,7 @@ const Presentation = () => {
                 </Swing>
 
                 <Text 
-                    color="yellow.600"
+                    color={isDark ? "gray.400" : 'yellow.700'}
                     fontSize="xl"
                 > 
                     Front-End Developer </Text>
@@ -81,7 +96,7 @@ const Presentation = () => {
         </Box>
         
 
-        <Sections />
+        <Sections isDark={isDark} />
         
         </>
     )

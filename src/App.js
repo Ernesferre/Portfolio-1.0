@@ -21,21 +21,21 @@ function App() {
   
   return (
     <Box
-      bg="white"
+      bg={isDark ? "black" : "white"}
     >
     
     
 
         <BrowserRouter>
 
-        <Presentation />
+        <Presentation isDark={isDark}  />
 
           <Switch>
 
             
 
             <Route exact path="/profile">
-              <Profile />
+              <Profile isDark={isDark} />
             </Route>
 
             <Route path="/portfolio">
@@ -43,7 +43,7 @@ function App() {
             </Route>
 
             <Route path="/skills">
-              <Skills />
+              <Skills isDark={isDark} />
             </Route>
 
             <Route path="/resume">

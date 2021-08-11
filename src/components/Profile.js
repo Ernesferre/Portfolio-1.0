@@ -3,13 +3,13 @@ import React from 'react'
 import Ernesto from '../assets/Ernesto.jpg'
 import Fade from 'react-reveal/Fade';
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <Box
             textAlign="center"
             mt={10}
-            mb={8}
-            // bg="green"
+            mb={30}
+            bg={props.isDark ? "black" : "white"}
             m={6}
             
         >
@@ -61,12 +61,17 @@ const Profile = () => {
                 {/* <Spacer />  */}
                
                 <Fade right>
-                <Box>
+                <Box
+                    // border="2px"
+                    // borderRadius={8}
+                >
                     <Text
                         textAlign="left"
                         fontSize={30}
+                        fontFamily="Roboto"
                         p={5}
-                        color="black"
+                        color={props.isDark ? "white" : "black"}
+                        
                         // mr={4}
                     >
                         Industrial Engineer with specialization in Front-End Development with

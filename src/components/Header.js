@@ -19,9 +19,12 @@ const Header = ({toggleColorMode, isDark}) => {
                 icon={isDark ? <FaSun /> : <FaMoon /> }
                 isRound="true"
                 onClick={ toggleColorMode }
-                color={isDark ? 'black' : "yellow.300"}
+                color={isDark ? 'black' : "yellow.600"}
                 alignSelf="flex-start"
-                bg={isDark ? "yellow.300" : "black"}
+                bg={isDark ? "yellow.600" : "black"}
+                // _hover={{
+                //     size: "10px"
+                // }}
                 
                 >       
             </IconButton>
@@ -36,7 +39,9 @@ const Header = ({toggleColorMode, isDark}) => {
                 href="https://github.com/Ernesferre"
                 isExternal
             >
-                <FaGithub />
+                <FaGithub
+                    color="yellow.600"
+                />
             </Link>
 
             <Link

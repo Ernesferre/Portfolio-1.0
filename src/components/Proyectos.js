@@ -26,8 +26,8 @@ export const Proyectos = [
 
       {
             id: 2,
-            titulo: "Gestion de Proyectos -  CRUD APP",
-            descripcion: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, tempora",
+            titulo: "Gestion de Proyectos",
+            descripcion: "CRUD APP",
             used_Tecs:" React - Firebase",
             picture: crudApp,
             url:`https://challenge-esto-es.netlify.app/`

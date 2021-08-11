@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Text, Image, Button, Flex, VStack, Container, Link, Heading } from "@chakra-ui/react";
+import HeadShake from 'react-reveal/HeadShake';
 
 const Card = (props) => {
 
@@ -8,16 +9,19 @@ const Card = (props) => {
     return (
 
         <Container
-            maxW="25rem"
+            maxW="15rem"
             borderRadius={10}
-            boxShadow="xl"
-            // padding="0.5rem"
-            position="relative"
+            boxShadow="2xl"
+            color={props.isDark ? "black" : "black"}
+            // position="relative"
             margin="3rem"
-            bg={props.isDark ? "white" : "black"}
+            bg={props.isDark ? "white" : "white"}
             p={0}
-            bg="gray.400"
+            // bg="white"
             border= "2px"
+            _hover={{
+              // maxW: "15.2rem"
+            }}
             
         >
             <Image
@@ -47,7 +51,7 @@ const Card = (props) => {
           size="md"
           textAlign="center"
           // color={ props.isDark ? "black" : "white"}
-          color="dark"
+          // color="dark"
           fontWeight="medium"
           marginBottom="0.5em"
           
@@ -57,7 +61,9 @@ const Card = (props) => {
 
         <Flex 
             flexDir="column"
+            fontSize={10}
         >
+
           
             <Box
               textAlign="left"
@@ -66,7 +72,7 @@ const Card = (props) => {
               maxHeight="3em"
               overflow="hidden"
               color="dark"
-              // color={ props.isDark ? "black" : "white"}
+              
             >
               <p fontWeight="semibold"> Descripcion: </p> {props.descripcion}
             </Box>
@@ -97,10 +103,11 @@ const Card = (props) => {
               <Button
                 textDecoration="none"
                 margin="0.5em"
-                
-                color="black"
                 color={ props.isDark ? "yellow.300" : "black"}
-                bg={ props.isDark ? "black" : "yellow.300"}
+                bg={ props.isDark ? "black" : "yellow.600"}
+                _hover={{
+                  textDecoration: "none"
+                }}
                 
                 
 

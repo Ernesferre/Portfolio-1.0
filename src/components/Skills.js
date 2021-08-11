@@ -5,14 +5,15 @@ import { IoLogoJavascript } from 'react-icons/io';
 import Zoom from 'react-reveal/Zoom';
 
 
-const Skills = () => {
+const Skills = (props) => {
     return (
         <Zoom>
         <Box
             textAlign="center"
             mt={8}
             mb={8}
-            bg="white"
+            bg={props.isDark ? "black" : "white"}
+            color={props.isDark ? "white" : "black"}
             m={2}
             
         >
@@ -32,7 +33,7 @@ const Skills = () => {
             >
                 <VStack 
                     p="2"  
-                    color="black"   
+                    // color="black"   
                 >
                     <Text>
                         React Js
@@ -45,7 +46,7 @@ const Skills = () => {
 
                 <VStack 
                     p="2"  
-                    color="black"   
+                    // color="black"   
                 >
                     <Text>
                         JavaScript
@@ -58,7 +59,7 @@ const Skills = () => {
 
                 <VStack 
                     p="2"  
-                    color="black"   
+                     
                 >
                     <Text>
                         Bootstrap 
@@ -71,7 +72,7 @@ const Skills = () => {
 
                 <VStack 
                     p="2"  
-                    color="black"   
+                      
                 >
                     <Text>
                         Git & GitHub
@@ -84,7 +85,7 @@ const Skills = () => {
 
                 <VStack 
                     p="2"  
-                    color="black"   
+                       
                 >
                     <Text>
                         HTML5

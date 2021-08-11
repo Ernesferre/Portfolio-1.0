@@ -5,19 +5,22 @@ import { Link } from "react-router-dom"
 import Fade from 'react-reveal/Fade';
 
 
-const Sections = () => {
+const Sections = (props) => {
+
+    console.log(props.isDark)
+
     return (
         <Fade>
         <Box
             alignSelf="center"
-            bg="white"
+            bg={props.isDark ? "black" : "white"}
             textAlign="center"
             
             m={2}
         >
             <SimpleGrid
-                bg="white"
-                columns={{ sm: 2, md: 4 }}
+                bg={props.isDark ? "black" : "white"}
+                columns={{ sm: 2, md: 4, lg: 4 }}
                 spacing="8"
                 p="10"
                 textAlign="center"
@@ -25,78 +28,83 @@ const Sections = () => {
                 color="gray.400"
                 mt={8}
                 >
-                <Button
-                    boxShadow="md" 
-                    p="6" 
-                    rounded="md" 
-                    bg="yellow.600" color="black" 
-                    letterSpacing="10px" 
-                    
-                    
-                    textDecorationLine="none" 
-                    _hover={{textDecoration: "none"}}
-                
+
+                <Link 
+                    to="/profile"
                 >
-                    <Link 
-                        to="/profile"
-                    >
+                    <Button
+                        boxShadow="md" 
+                        p="6" 
+                        rounded="md" 
+                        bg="yellow.600" 
+                        color="black" 
+                        letterSpacing="10px" 
+                        textDecorationLine="none" 
+                        _hover={{textDecoration: "none"}}
+                        boxShadow="2xl"
+                    >  
                     Profile
-                    </Link>
-                </Button>
+                    </Button>
+                </Link>
 
-                <Button
-                    boxShadow="md" 
-                    p="6" rounded="md" 
-                    bg="yellow.600" color="black" 
-                    letterSpacing="10px" 
-                    
-                    
-                    textDecorationLine="none" 
-                    _hover={{textDecoration: "none"}}
-                
+                <Link 
+                    to="/skills"
                 >
-                    <Link 
-                        to="/skills"
-                    >
+                    <Button
+                        boxShadow="md" 
+                        p="6" 
+                        rounded="md" 
+                        bg="yellow.600" 
+                        color="black" 
+                        letterSpacing="10px" 
+                        textDecorationLine="none" 
+                        _hover={{textDecoration: "none"}}
+                        boxShadow="2xl"
+                    >  
                     Skills
-                    </Link>
-                </Button>
+                    </Button>
+                </Link>
 
-                <Button
-                    boxShadow="md" 
-                    p="6" rounded="md" 
-                    bg="yellow.600" color="black" 
-                    letterSpacing="10px" 
-                    
-                    
-                    textDecorationLine="none" 
-                    _hover={{textDecoration: "none"}}
-                
+                <Link 
+                    to="/portfolio"
                 >
-                    <Link 
-                        to="/portfolio"
-                    >
+                    <Button
+                        boxShadow="md" 
+                        p="6" 
+                        rounded="md" 
+                        bg="yellow.600" 
+                        color="black" 
+                        letterSpacing="10px" 
+                        textDecorationLine="none" 
+                        _hover={{textDecoration: "none"}}
+                        boxShadow="2xl"
+                    >  
                     Portfolio
-                    </Link>
-                </Button>
+                    </Button>
+                </Link>
 
-                <Button
-                    boxShadow="md" 
-                    p="6" rounded="md" 
-                    bg="yellow.600" color="black" 
-                    letterSpacing="10px" 
-                    
-                    
-                    textDecorationLine="none" 
-                    _hover={{textDecoration: "none"}}
-                
+                <Link 
+                    to="/resume"
                 >
-                    <Link 
-                        to="/resume"
-                    >
+                    <Button
+                        boxShadow="md" 
+                        p="6" 
+                        rounded="md" 
+                        bg="yellow.600" 
+                        color="black" 
+                        letterSpacing="10px" 
+                        textDecorationLine="none" 
+                        _hover={{textDecoration: "none"}}
+                        boxShadow="2xl"
+                    >  
                     Resume
-                    </Link>
-                </Button>
+                    </Button>
+                </Link>
+
+
+                
+
+                
 
                 
             
