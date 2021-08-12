@@ -20,9 +20,9 @@ const Portfolio = (props) => {
             textAlign="center"
             mt={8}
             mb={8}
-            // bg="white"
             m={2}
             bg={props.isDark ? "black" : "white"}
+            id="portfolio"
             
         >
             {/* <Heading

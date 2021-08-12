@@ -10,13 +10,15 @@ const Card = (props) => {
 
         <Container
             maxW="15rem"
-            borderRadius={10}
-            boxShadow="2xl"
+            borderRadius={12}
+            // borderColor='black'
+            boxShadow="dark-xl"
             color={props.isDark ? "black" : "black"}
+            fontFamily="Roboto"
             // position="relative"
-            margin="3rem"
+            margin="2rem"
             bg={props.isDark ? "white" : "white"}
-            p={0}
+            p={1}
             // bg="white"
             border= "2px"
             _hover={{
@@ -25,8 +27,9 @@ const Card = (props) => {
             
         >
             <Image
-                borderTopRadius={8}
+                borderTopRadius={10}
                 width="100%"
+                
                 
                 maxH="40em"
                 // objectFit="cover"
@@ -74,7 +77,7 @@ const Card = (props) => {
               color="dark"
               
             >
-              <p fontWeight="semibold"> Descripcion: </p> {props.descripcion}
+              <p fontWeight="100"> Descripcion: </p> {props.descripcion}
             </Box>
 
             <Box
@@ -103,6 +106,8 @@ const Card = (props) => {
               <Button
                 textDecoration="none"
                 margin="0.5em"
+                fontFamily="Amatic SC"
+                letterSpacing={2}
                 color={ props.isDark ? "yellow.300" : "black"}
                 bg={ props.isDark ? "black" : "yellow.600"}
                 _hover={{
@@ -114,7 +119,7 @@ const Card = (props) => {
                 // textTransform="uppercase"
                 size="sm"
               >
-                Visitar Pagina
+                Visit Page
               </Button>
             </Link>
           </Flex>

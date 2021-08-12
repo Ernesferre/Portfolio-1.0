@@ -38,10 +38,10 @@ const Presentation = () => {
                 <Heading
                     border="2px"
                     borderRadius="full"
-                    borderColor={isDark ? "black" : 'black'}
+                    borderColor={isDark ? "white" : 'black'}
                     bg="yellow.600"
                     color='black'
-                    p={6}
+                    p={7}
                     mb={2}
                     letterSpacing={7}
                     shadow="dark-lg"
@@ -50,6 +50,11 @@ const Presentation = () => {
                     
                     onClick={handleStart}
                     fontFamily="Amatic SC"
+                    _hover= {{
+                        // size: "10rem",
+                        // color: 'white',
+                        // boxShadow: '2rem'
+                    }}
                     
                 >
                     EF
