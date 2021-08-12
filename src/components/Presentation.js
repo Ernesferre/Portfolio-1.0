@@ -45,9 +45,11 @@ const Presentation = () => {
                     mb={2}
                     letterSpacing={7}
                     shadow="dark-lg"
-                    fontFamily="cursive"
-                    size="3xl"
+                    // fontFamily="cursive"
+                    size="4xl"
+                    
                     onClick={handleStart}
+                    fontFamily="Amatic SC"
                     
                 >
                     EF
@@ -73,9 +75,12 @@ const Presentation = () => {
                 <Swing>  
                 <Heading 
                     color={isDark ? "yellow.600" : 'black'}
+                    fontSize="6xl"
+                    letterSpacing={4}
+                    fontFamily="Amatic SC"
+                    fontWeight="700"
+                    textAlign="center"
                     
-                    letterSpacing="widest"
-                    fontFamily="unset"
                 > 
                     Ernesto Ferreyra
                 </Heading>
@@ -83,7 +88,10 @@ const Presentation = () => {
 
                 <Text 
                     color={isDark ? "gray.400" : 'yellow.700'}
-                    fontSize="xl"
+                    fontSize="2xl"
+                    fontFamily="Amatic SC"
+                    fontWeight="700"
+                    letterSpacing={2}
                 > 
                     Front-End Developer </Text>
                 </VStack>

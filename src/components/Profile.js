@@ -11,6 +11,8 @@ const Profile = (props) => {
             mb={30}
             bg={props.isDark ? "black" : "white"}
             m={6}
+            id="profile"
+            
             
         >
             {/* <Heading
@@ -67,8 +69,10 @@ const Profile = (props) => {
                 >
                     <Text
                         textAlign="left"
-                        fontSize={30}
+                        fontSize={23}
                         fontFamily="Roboto"
+                        fontWeight="thin"
+                        letterSpacing={0}
                         p={5}
                         color={props.isDark ? "white" : "black"}
                         

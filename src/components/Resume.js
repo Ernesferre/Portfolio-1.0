@@ -10,6 +10,7 @@ const Resume = () => {
             placeItems="center"
             mt={8}
             mb={4}
+            id="resume"
             
         >
             <Link

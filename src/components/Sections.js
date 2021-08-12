@@ -3,6 +3,7 @@ import { Box, Button, SimpleGrid} from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 // import { Link } from "react-router-dom"
 import Fade from 'react-reveal/Fade';
+// import { Link } from "react-scroll"
 
 
 const Sections = (props) => {
@@ -15,25 +16,31 @@ const Sections = (props) => {
             alignSelf="center"
             bg={props.isDark ? "black" : "white"}
             textAlign="center"
+            fontFamily="Amatic SC"
+            fontWeight="bold"
             
             m={2}
         >
             <SimpleGrid
                 bg={props.isDark ? "black" : "white"}
-                columns={{ sm: 2, md: 4, lg: 4 }}
+                columns={{ sm: 2, md: 2, lg: 4 }}
                 spacing="8"
                 p="10"
                 textAlign="center"
                 rounded="lg"
-                color="gray.400"
+                color="black"
                 mt={8}
                 >
 
                 <Link 
                     to="/profile"
+                    
+                    // smooth={true}
+                    // duration={1000}
                 >
                     <Button
                         boxShadow="md" 
+                        width="250px"
                         p="6" 
                         rounded="md" 
                         bg="yellow.600" 
@@ -42,6 +49,7 @@ const Sections = (props) => {
                         textDecorationLine="none" 
                         _hover={{textDecoration: "none"}}
                         boxShadow="2xl"
+                        href="profile"
                     >  
                     Profile
                     </Button>
@@ -52,6 +60,7 @@ const Sections = (props) => {
                 >
                     <Button
                         boxShadow="md" 
+                        width="250px"
                         p="6" 
                         rounded="md" 
                         bg="yellow.600" 
@@ -70,6 +79,7 @@ const Sections = (props) => {
                 >
                     <Button
                         boxShadow="md" 
+                        width="250px"
                         p="6" 
                         rounded="md" 
                         bg="yellow.600" 
@@ -88,6 +98,7 @@ const Sections = (props) => {
                 >
                     <Button
                         boxShadow="md" 
+                        width="250px"
                         p="6" 
                         rounded="md" 
                         bg="yellow.600" 

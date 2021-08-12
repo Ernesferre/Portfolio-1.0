@@ -15,6 +15,7 @@ const Skills = (props) => {
             bg={props.isDark ? "black" : "white"}
             color={props.isDark ? "white" : "black"}
             m={2}
+            id="skills"
             
         >
             {/* <Heading
