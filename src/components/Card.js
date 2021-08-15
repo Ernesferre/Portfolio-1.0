@@ -39,28 +39,19 @@ const Card = (props) => {
                 
                 
             />
-        {/* {postedOn && (
-          <Text
-            textAlign="end"
-            fontSize="small"
-            color="brandBlue.200"
-            marginRight="0.3em"
-          >
-            {formatDate(postedOn)}
-          </Text>
-        )} */}
+       
   
-        <Heading
-          size="md"
-          textAlign="center"
-          // color={ props.isDark ? "black" : "white"}
-          // color="dark"
-          fontWeight="medium"
-          marginBottom="0.5em"
-          
-        >
-          {props.titulo}
-        </Heading>
+            <Heading
+              size="md"
+              textAlign="center"
+              // color={ props.isDark ? "black" : "white"}
+              // color="dark"
+              fontWeight="medium"
+              marginBottom="0.5em"
+              
+            >
+              {props.titulo}
+            </Heading>
 
         <Flex 
             flexDir="column"

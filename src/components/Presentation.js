@@ -4,14 +4,19 @@ import Sections from './Sections'
 import Ernesto from '../assets/Ernesto.jpg'
 import { FaSun , FaMoon } from 'react-icons/fa';
 import { useColorMode } from "@chakra-ui/color-mode";
-import { Image, Box, VStack, Heading, Text, Grid, IconButton } from "@chakra-ui/react"
+import { Image, Box, VStack, Heading, Text, Grid, IconButton, Link } from "@chakra-ui/react"
 import Jump from 'react-reveal/Jump'
 import Swing from 'react-reveal/Swing'
+import { useHistory } from 'react-router-dom'
+
 
 const Presentation = () => {
 
+    const history = useHistory();
+
     const handleStart = () => {
-            console.log("hola")
+            // history.push('/')
+            window.location.replace('/')
     }
     
     const {colorMode, toggleColorMode} = useColorMode();
@@ -35,6 +40,12 @@ const Presentation = () => {
                 p={3}    
             > 
             <Jump>
+                <Link
+                    textDecoration="none"
+                    _hover= {{
+                        textdecoration: 'none'
+                    }}
+                >
                 <Heading
                     border="2px"
                     borderRadius="full"
@@ -45,20 +56,24 @@ const Presentation = () => {
                     mb={2}
                     letterSpacing={7}
                     shadow="dark-lg"
-                    // fontFamily="cursive"
+                    textDecoration="none"
                     size="4xl"
+                    
                     
                     onClick={handleStart}
                     fontFamily="Amatic SC"
                     _hover= {{
+                        textdecoration: "none",
+                        
                         // size: "10rem",
                         // color: 'white',
-                        // boxShadow: '2rem'
+                        boxShadow: '2rem'
                     }}
                     
                 >
                     EF
                 </Heading>
+                </Link>
 
                 {/* <Image
                 
@@ -110,6 +125,8 @@ const Presentation = () => {
         
 
         <Sections isDark={isDark} />
+
+        
         
         </>
     )

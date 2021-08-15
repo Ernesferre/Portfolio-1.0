@@ -8,8 +8,8 @@ const Resume = () => {
         <Bounce top>
         <Container
             placeItems="center"
-            mt={8}
-            mb={4}
+            mt="4rem"
+            // mb={4}
             id="resume"
             
         >
@@ -19,7 +19,7 @@ const Resume = () => {
                 // mb={6}
                 textAlign="center"
             >
-                Click to open in big screen
+                Click image to open in big screen
             </Text>
 
             <Link

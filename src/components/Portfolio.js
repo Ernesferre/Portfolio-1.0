@@ -18,9 +18,8 @@ const Portfolio = (props) => {
         <Zoom>
         <Box
             textAlign="center"
-            mt={8}
-            mb={8}
-            m={2}
+            mt="4rem"
+            // m={2}
             bg={props.isDark ? "black" : "white"}
             id="portfolio"
             
@@ -35,7 +34,7 @@ const Portfolio = (props) => {
             
                 <Flex 
                     flexWrap="wrap" 
-                    
+                    mt="3rem"
                     justifyContent="center"
                 >   
                         {Proyectos.map((item) =>  

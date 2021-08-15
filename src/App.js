@@ -12,6 +12,7 @@ import Skills from './components/Skills';
 import Resume from './components/Resume';
 import Presentation from './components/Presentation';
 import { Box, Container } from "@chakra-ui/react";
+import EmptySection from "./components/EmptySection";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   const isDark = colorMode === "dark";
   
   return (
+    <>
     <Box
       bg={isDark ? "black" : "white"}
     >
@@ -54,8 +56,13 @@ function App() {
 
         </BrowserRouter>
       
+        
 
     </Box>
+
+    <EmptySection isDark={isDark} />
+
+    </>
     
   );
 }

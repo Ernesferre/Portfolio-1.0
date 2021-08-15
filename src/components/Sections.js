@@ -19,13 +19,13 @@ const Sections = (props) => {
             fontFamily="Amatic SC"
             fontWeight="bold"
             
-            m={2}
+            
         >
             <SimpleGrid
                 bg={props.isDark ? "black" : "white"}
                 columns={{ sm: 2, md: 2, lg: 4 }}
                 spacing="8"
-                p="10"
+                // p="10"
                 textAlign="center"
                 rounded="lg"
                 color="black"

@@ -7,26 +7,18 @@ const Profile = (props) => {
     return (
         <Box
             textAlign="center"
-            mt={10}
-            mb={30}
             bg={props.isDark ? "black" : "white"}
-            m={6}
+            mt="4rem"
             id="profile"
+            w="90%"
             
             
         >
-            {/* <Heading
-                color="black"
-                mb={6}
-            >
-                Profile
-            </Heading> */}
 
             <SimpleGrid 
                 columns={[1, 1, 2]}
                 spacing={10}
-                // spacing="100px"
-                // alignItems="center"
+                
             >
                 
                 <Center>
@@ -60,32 +52,32 @@ const Profile = (props) => {
                 </Center>
                 
 
-                {/* <Spacer />  */}
+                
                
                 <Fade right>
                 <Box
-                    // border="2px"
-                    // borderRadius={8}
+               
                 >
                     <Text
                         textAlign="left"
                         fontSize={23}
+                        ml={3}
                         fontFamily="Roboto"
                         fontWeight="thin"
                         letterSpacing={0}
                         p={5}
                         color={props.isDark ? "white" : "black"}
                         
-                        // mr={4}
+                        
                     >
-                        Industrial Engineer with specialization in Front-End Development with
-                        knowledge of Javascript, React Js, Redux, Agile Methodologies, among others.
+                        I am a self-taught programmer, passionate about technology. I am a deeply committed person about the things I decide to carry out and with the people who I work for.
                         <br></br>
-                        My current goal is to put my knowledge and skills into practice
-                        acquired during this last year. Seek to contribute to
-                        fulfillment of the objectives of the company. Forever
-                        pursuing continuous growth through learning
-                        of new technologies and teamwork dynamics.
+                        Nowadays, my main wish is to work in a place where I can apply my knowledge but at the same time be the most productive I could be adding up value to the team work.
+                        <br></br>
+                        I have a very high work ethic and I like to maintain a good work environment where respect and good communication are essentials values of the team.
+                        <br></br>
+                        My greatest desire is to seek personal and professional growth through learning new technologies and new ways of working.
+
                     </Text>
                 </Box>
                 </Fade>
