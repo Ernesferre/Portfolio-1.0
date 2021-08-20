@@ -30,7 +30,7 @@ export const Proyectos = [
             descripcion: "CRUD APP",
             used_Tecs:" React - Firebase",
             picture: crudApp,
-            url:`https://challenge-esto-es.netlify.app/`
+            url:`https://crud-project-app.netlify.app/`
       }
 
       // {
