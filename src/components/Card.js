@@ -17,7 +17,7 @@ const Card = (props) => {
             margin="2rem"
             bg={props.isDark ? "white" : "white"}
             p={1}
-            bg="gray.400"
+            bg="gray.300"
             _hover={{
               // maxW: "15.2rem"
             }}
@@ -26,7 +26,7 @@ const Card = (props) => {
             <Image
                 borderTopRadius={10}
                 width="100%"
-                maxH="50em"
+                maxH="40em"
                 src={props.picture}
                 fallbackSrc="https://via.placeholder.com/382x300"
                 mb={4}
