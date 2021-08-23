@@ -11,16 +11,13 @@ const Card = (props) => {
         <Container
             maxW="15rem"
             borderRadius={12}
-            // borderColor='black'
             boxShadow="dark-xl"
             color={props.isDark ? "black" : "black"}
             fontFamily="Roboto"
-            // position="relative"
             margin="2rem"
             bg={props.isDark ? "white" : "white"}
             p={1}
-            // bg="white"
-            border= "2px"
+            bg="gray.400"
             _hover={{
               // maxW: "15.2rem"
             }}
@@ -29,10 +26,7 @@ const Card = (props) => {
             <Image
                 borderTopRadius={10}
                 width="100%"
-                
-                
-                maxH="40em"
-                // objectFit="cover"
+                maxH="50em"
                 src={props.picture}
                 fallbackSrc="https://via.placeholder.com/382x300"
                 mb={4}
@@ -44,11 +38,9 @@ const Card = (props) => {
             <Heading
               size="md"
               textAlign="center"
-              // color={ props.isDark ? "black" : "white"}
-              // color="dark"
-              fontWeight="medium"
-              marginBottom="0.5em"
-              
+              fontWeight="bold"
+              marginBottom="0.5em"    
+              fontFamily="Amatic SC" 
             >
               {props.titulo}
             </Heading>
@@ -56,6 +48,7 @@ const Card = (props) => {
         <Flex 
             flexDir="column"
             fontSize={10}
+            
         >
 
           
@@ -68,7 +61,8 @@ const Card = (props) => {
               color="dark"
               
             >
-              <p fontWeight="100"> Descripcion: </p> {props.descripcion}
+              {/* <p > Descripcion: </p>  */}
+              {props.descripcion}
             </Box>
 
             <Box
@@ -82,7 +76,7 @@ const Card = (props) => {
               color="dark"
               // color={ props.isDark ? "black" : "white"}
             >
-              <p fontWeight="semibold"> Tecnologias Usadas: </p> {props.descripcion}
+              <p fontWeight="semibold"> Tecnologias Usadas: </p> {props.used_Tecs}
             </Box>
           
   

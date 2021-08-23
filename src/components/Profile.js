@@ -10,7 +10,7 @@ const Profile = (props) => {
             bg={props.isDark ? "black" : "white"}
             mt="4rem"
             id="profile"
-            w="90%"
+            w="100%"
             
             
         >
@@ -28,24 +28,24 @@ const Profile = (props) => {
                     w="100%"
                     
                 >
-                    
+                    <Center>
                     <Image
                         alignItems="center"
-                        
-                        borderRadius="full"
                         width="300px"
-                        border="10px"
                         alignItems="center"
-                        bordercolor="brown"
                         isRound="true"
                         src={Ernesto}
                         alt="Ernesto"
                         boxShadow="dark-lg"
-                        mb={2}
                         display="inline"
                         mb={6}
+                        // border="1px"   
+                        // borderColor="yellow.600"
+                        // borderRadius="full"
+                   
                         
                     />
+                    </Center>
                     
                 </Box>
                 </Fade>
@@ -61,7 +61,7 @@ const Profile = (props) => {
                     <Text
                         textAlign="left"
                         fontSize={23}
-                        ml={3}
+                        mr={3}
                         fontFamily="Roboto"
                         fontWeight="thin"
                         letterSpacing={0}

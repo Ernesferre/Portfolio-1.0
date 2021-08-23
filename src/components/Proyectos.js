@@ -8,9 +8,9 @@ export const Proyectos = [
 
       {
             id: 0,
-            titulo: "Tienda Musical",
-            descripcion: "E-commerce",
-            used_Tecs:" React - Firebase ",
+            titulo: "Tienda MusiKal",
+            descripcion: "E-commerce de Articulos Musicales",
+            used_Tecs:" React Js - Context - Firebase ",
             picture: tiendamusikal, 
             url: `https://tienda-musikal.netlify.app/`
       },
@@ -18,8 +18,8 @@ export const Proyectos = [
       {
             id: 1,
             titulo: "La Comanda",
-            descripcion: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, tempora dfsadfsda sdafsadfsdafsda fsadfsadfsdaf sdfsdafsdafsda fsadfsdafsdf sdfsdafsadfsadf sadfsadfsadfsdafsdafsdafsadfsad fsdafsdafsadfsdaf sdafsdafsda",
-            used_Tecs:"React - Firebase",
+            descripcion: "Carrito de Compras para Restaurante La Comanda",
+            used_Tecs:"React - Styled Components",
             picture: lacomanda,
             url:`https://la-comanda.netlify.app/`    
       },
@@ -27,20 +27,13 @@ export const Proyectos = [
       {
             id: 2,
             titulo: "Gestion de Proyectos",
-            descripcion: "CRUD APP",
-            used_Tecs:" React - Firebase",
+            descripcion: "CRUD App para administrar y hacer seguimiento de proyectos",
+            used_Tecs:" React Js - Chakra UI",
             picture: crudApp,
-            url:`https://challenge-esto-es.netlify.app/`
+            url:`https://crud-project-app.netlify.app/`
       }
 
-      // {
-      //       id: 3,
-      //       titulo: "Super Heroes API",
-      //       descripcion: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, tempora",
-      //       used_Tecs:" React - Contexts - Apis ",
-      //       picture: Crudapp,
-      //       url:"url"
-      // }
+      
 
 ]
 
