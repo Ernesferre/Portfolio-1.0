@@ -10,7 +10,8 @@ const Card = (props) => {
 
         <Container
             maxW="15rem"
-            borderRadius={12}
+            // maxH="20rem"
+            // borderRadius={12}
             boxShadow="dark-xl"
             color={props.isDark ? "black" : "black"}
             fontFamily="Roboto"
@@ -24,7 +25,7 @@ const Card = (props) => {
             
         >
             <Image
-                borderTopRadius={10}
+                // borderTopRadius={10}
                 width="100%"
                 maxH="40em"
                 src={props.picture}
@@ -73,7 +74,7 @@ const Card = (props) => {
               marginRight="1em"
               maxHeight="3em"
               overflow="hidden"
-              color="dark"
+              color="grey"
               // color={ props.isDark ? "black" : "white"}
             >
               <p fontWeight="semibold"> Tecnologias Usadas: </p> {props.used_Tecs}
@@ -89,6 +90,7 @@ const Card = (props) => {
                 isExternal
             >
               <Button
+                boxShadow="2xl"
                 textDecoration="none"
                 margin="0.5em"
                 fontFamily="Amatic SC"
