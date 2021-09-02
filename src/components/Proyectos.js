@@ -8,8 +8,8 @@ export const Proyectos = [
 
       {
             id: 0,
-            titulo: "Tienda Musical",
-            descripcion: "E-commerce",
+            titulo: "Tienda Musicale",
+            descripcion: "E-commerceeee",
             used_Tecs:" React - Firebase ",
             picture: tiendamusikal, 
             url: `https://tienda-musikal.netlify.app/`
@@ -26,7 +26,7 @@ export const Proyectos = [
 
       {
             id: 2,
-            titulo: "Gestion de Proyectos",
+            titulo: "Gestion de Proyectosss",
             descripcion: "CRUD APP",
             used_Tecs:" React - Firebase",
             picture: crudApp,
