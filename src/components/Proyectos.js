@@ -8,6 +8,7 @@ export const Proyectos = [
 
       {
             id: 0,
+
             titulo: "Tienda MusiKal",
             descripcion: "E-commerce de Articulos Musicales",
             used_Tecs:" React Js - Context - Firebase ",
@@ -26,6 +27,7 @@ export const Proyectos = [
 
       {
             id: 2,
+
             titulo: "Gestion de Proyectos",
             descripcion: "CRUD App para administrar y hacer seguimiento de proyectos",
             used_Tecs:" React Js - Chakra UI",

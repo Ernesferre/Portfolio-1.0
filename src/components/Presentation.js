@@ -100,7 +100,7 @@ const Presentation = () => {
                     
                     
                 > 
-                    Ernesto Ferreyra
+                    Ernesto Ferreyraaaaaaa
                 </Heading>
                 </Swing>
 
