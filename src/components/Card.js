@@ -8,29 +8,32 @@ const Card = (props) => {
 
     return (
 
-        <Container
-            maxW="15rem"
+        <VStack
+            maxW="17rem"
+            position="relative"
             // maxH="20rem"
+            // boxShadow="dark-lg"
             // borderRadius={12}
-            boxShadow="dark-xl"
+            
             color={props.isDark ? "black" : "black"}
             fontFamily="Roboto"
             margin="2rem"
             bg={props.isDark ? "white" : "white"}
-            p={1}
+            p={0.5}
             bg="gray.300"
             _hover={{
-              // maxW: "15.2rem"
+              boxShadow: "dark-lg"
             }}
             
         >
             <Image
                 // borderTopRadius={10}
                 width="100%"
-                maxH="40em"
+                // maxH="20em"
+                // objectFit="cover"
                 src={props.picture}
                 fallbackSrc="https://via.placeholder.com/382x300"
-                mb={4}
+                mb={2}
                 
                 
             />
@@ -39,6 +42,7 @@ const Card = (props) => {
             <Heading
               size="md"
               textAlign="center"
+              letterSpacing="2px"
               fontWeight="bold"
               marginBottom="0.5em"    
               fontFamily="Amatic SC" 
@@ -111,7 +115,7 @@ const Card = (props) => {
             </Link>
           </Flex>
         </Flex>
-      </Container>
+      </VStack>
     
     )
 }

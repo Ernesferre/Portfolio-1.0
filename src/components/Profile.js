@@ -41,7 +41,10 @@ const Profile = (props) => {
                         mb={6}
                         // border="1px"   
                         // borderColor="yellow.600"
-                        // borderRadius="full"
+                        borderRadius="full"
+                        _hover={{
+                            boxShadow: "dark-lg"
+                          }}
                    
                         
                     />
@@ -76,7 +79,7 @@ const Profile = (props) => {
                         <br></br>
                         I have a very high work ethic and I like to maintain a good work environment where respect and good communication are essentials values of the team.
                         <br></br>
-                        My greatest desire is to seek personal and professional growth through learning new technologies and new ways of working.
+                        My greatest desire is to seek personal and professional growth through by learning new technologies and new ways of working.
 
                     </Text>
                 </Box>

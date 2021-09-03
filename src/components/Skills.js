@@ -39,6 +39,7 @@ const Skills = (props) => {
                 </VStack>
                 </Zoom>
 
+                <Zoom>
                 <VStack 
                     p="2"  
                     // color="black"   
@@ -51,6 +52,7 @@ const Skills = (props) => {
                         size={60}
                     />
                 </VStack>
+                </Zoom>
 
                 <Zoom>
                 <VStack 

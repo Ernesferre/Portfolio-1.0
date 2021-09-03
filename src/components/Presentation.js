@@ -55,7 +55,7 @@ const Presentation = () => {
                     p={7}
                     mb={2}
                     letterSpacing={7}
-                    shadow="dark-lg"
+                    boxShadow= "dark-lg"
                     textDecoration="none"
                     size="4xl"
                     
@@ -64,10 +64,7 @@ const Presentation = () => {
                     fontFamily="Amatic SC"
                     _hover= {{
                         textdecoration: "none",
-                        
-                        // size: "10rem",
-                        // color: 'white',
-                        boxShadow: '2rem'
+                        boxShadow: "dark-lg"
                     }}
                     
                 >
@@ -100,6 +97,7 @@ const Presentation = () => {
                     fontFamily="Amatic SC"
                     fontWeight="700"
                     textAlign="center"
+                    
                     
                 > 
                     Ernesto Ferreyra

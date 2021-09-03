@@ -22,9 +22,9 @@ const Header = ({toggleColorMode, isDark}) => {
                 color={isDark ? 'black' : "yellow.600"}
                 alignSelf="flex-start"
                 bg={isDark ? "yellow.600" : "black"}
-                // _hover={{
-                //     size: "10px"
-                // }}
+                _hover={{
+                    boxShadow: "dark-lg"
+                  }}
                 
                 >       
             </IconButton>
@@ -38,9 +38,15 @@ const Header = ({toggleColorMode, isDark}) => {
                 fontSize="x-large"
                 href="https://github.com/Ernesferre"
                 isExternal
+                
             >
                 <FaGithub
                     color="yellow.600"
+                    _hover={{
+                        boxShadow: "dark-lg"
+                      }}
+                    
+
                 />
             </Link>
 
