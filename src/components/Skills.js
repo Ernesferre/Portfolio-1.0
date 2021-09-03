@@ -7,23 +7,15 @@ import Zoom from 'react-reveal/Zoom';
 
 const Skills = (props) => {
     return (
-        <Zoom>
+        
         <Box
             textAlign="center"
             mt={8}
-            // mb={8}
             bg={props.isDark ? "black" : "white"}
             color={props.isDark ? "white" : "black"}
-            // m={2}
             id="skills"
             
         >
-            {/* <Heading
-                color="black"
-                mb={6}
-            >
-                Skills
-            </Heading> */}
 
             <SimpleGrid
                 columns={{ sm: 2, md: 5 }}
@@ -32,6 +24,7 @@ const Skills = (props) => {
                 textAlign="center"
                 rounded="lg"
             >
+                <Zoom>
                 <VStack 
                     p="2"  
                     // color="black"   
@@ -44,7 +37,9 @@ const Skills = (props) => {
                         size={60}
                     />
                 </VStack>
+                </Zoom>
 
+                <Zoom>
                 <VStack 
                     p="2"  
                     // color="black"   
@@ -57,7 +52,9 @@ const Skills = (props) => {
                         size={60}
                     />
                 </VStack>
+                </Zoom>
 
+                <Zoom>
                 <VStack 
                     p="2"  
                      
@@ -70,7 +67,10 @@ const Skills = (props) => {
                         size={60}
                     />
                 </VStack>
+                </Zoom>
 
+                
+                <Zoom>
                 <VStack 
                     p="2"  
                       
@@ -83,7 +83,9 @@ const Skills = (props) => {
                         size={60}
                     />
                 </VStack>
+                </Zoom>
 
+                <Zoom>
                 <VStack 
                     p="2"  
                        
@@ -96,13 +98,14 @@ const Skills = (props) => {
                         size={60}
                     />
                 </VStack>
+                </Zoom>
 
                 
             </SimpleGrid>
 
 
         </Box>
-        </Zoom>
+       
     )
 }
 

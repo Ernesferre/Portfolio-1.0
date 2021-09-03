@@ -8,34 +8,32 @@ const Card = (props) => {
 
     return (
 
-        <Container
-            maxW="15rem"
-            borderRadius={12}
-            // borderColor='black'
-            boxShadow="dark-xl"
+        <VStack
+            maxW="17rem"
+            position="relative"
+            // maxH="20rem"
+            // boxShadow="dark-lg"
+            // borderRadius={12}
+            
             color={props.isDark ? "black" : "black"}
             fontFamily="Roboto"
-            // position="relative"
             margin="2rem"
             bg={props.isDark ? "white" : "white"}
-            p={1}
-            // bg="white"
-            border= "2px"
+            p={0.5}
+            bg="gray.300"
             _hover={{
-              // maxW: "15.2rem"
+              boxShadow: "dark-lg"
             }}
             
         >
             <Image
-                borderTopRadius={10}
+                // borderTopRadius={10}
                 width="100%"
-                
-                
-                maxH="40em"
+                // maxH="20em"
                 // objectFit="cover"
                 src={props.picture}
                 fallbackSrc="https://via.placeholder.com/382x300"
-                mb={4}
+                mb={2}
                 
                 
             />
@@ -44,11 +42,10 @@ const Card = (props) => {
             <Heading
               size="md"
               textAlign="center"
-              // color={ props.isDark ? "black" : "white"}
-              // color="dark"
-              fontWeight="medium"
-              marginBottom="0.5em"
-              
+              letterSpacing="2px"
+              fontWeight="bold"
+              marginBottom="0.5em"    
+              fontFamily="Amatic SC" 
             >
               {props.titulo}
             </Heading>
@@ -56,6 +53,7 @@ const Card = (props) => {
         <Flex 
             flexDir="column"
             fontSize={10}
+            
         >
 
           
@@ -68,7 +66,8 @@ const Card = (props) => {
               color="dark"
               
             >
-              <p fontWeight="100"> Descripcion: </p> {props.descripcion}
+              {/* <p > Descripcion: </p>  */}
+              {props.descripcion}
             </Box>
 
             <Box
@@ -79,10 +78,10 @@ const Card = (props) => {
               marginRight="1em"
               maxHeight="3em"
               overflow="hidden"
-              color="dark"
+              color="grey"
               // color={ props.isDark ? "black" : "white"}
             >
-              <p fontWeight="semibold"> Tecnologias Usadas: </p> {props.descripcion}
+              <p fontWeight="semibold"> Tecnologias Usadas: </p> {props.used_Tecs}
             </Box>
           
   
@@ -95,6 +94,7 @@ const Card = (props) => {
                 isExternal
             >
               <Button
+                boxShadow="2xl"
                 textDecoration="none"
                 margin="0.5em"
                 fontFamily="Amatic SC"
@@ -115,7 +115,7 @@ const Card = (props) => {
             </Link>
           </Flex>
         </Flex>
-      </Container>
+      </VStack>
     
     )
 }

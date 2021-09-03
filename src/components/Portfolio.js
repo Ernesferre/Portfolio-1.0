@@ -41,10 +41,12 @@ const Portfolio = (props) => {
                         <Flex
                             
                         >
+                            <Zoom>
                             <Card 
                                 isDark={isDark}
                                 key={item.id} {...item}
-                        />
+                            />
+                            </Zoom>
                         </Flex>
                         )}
                 </Flex>

@@ -50,6 +50,9 @@ const Sections = (props) => {
                         _hover={{textDecoration: "none"}}
                         boxShadow="2xl"
                         href="profile"
+                        _hover={{
+                            boxShadow: "dark-lg"
+                          }}
                     >  
                     Profile
                     </Button>
@@ -69,6 +72,9 @@ const Sections = (props) => {
                         textDecorationLine="none" 
                         _hover={{textDecoration: "none"}}
                         boxShadow="2xl"
+                        _hover={{
+                            boxShadow: "dark-lg"
+                          }}
                     >  
                     Skills
                     </Button>
@@ -88,6 +94,9 @@ const Sections = (props) => {
                         textDecorationLine="none" 
                         _hover={{textDecoration: "none"}}
                         boxShadow="2xl"
+                        _hover={{
+                            boxShadow: "dark-lg"
+                          }}
                     >  
                     Portfolio
                     </Button>
@@ -107,6 +116,9 @@ const Sections = (props) => {
                         textDecorationLine="none" 
                         _hover={{textDecoration: "none"}}
                         boxShadow="2xl"
+                        _hover={{
+                            boxShadow: "dark-lg"
+                          }}
                     >  
                     Resume
                     </Button>

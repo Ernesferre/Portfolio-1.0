@@ -10,7 +10,7 @@ const Profile = (props) => {
             bg={props.isDark ? "black" : "white"}
             mt="4rem"
             id="profile"
-            w="90%"
+            w="100%"
             
             
         >
@@ -28,24 +28,27 @@ const Profile = (props) => {
                     w="100%"
                     
                 >
-                    
+                    <Center>
                     <Image
                         alignItems="center"
-                        
-                        borderRadius="full"
                         width="300px"
-                        border="10px"
                         alignItems="center"
-                        bordercolor="brown"
                         isRound="true"
                         src={Ernesto}
                         alt="Ernesto"
                         boxShadow="dark-lg"
-                        mb={2}
                         display="inline"
                         mb={6}
+                        // border="1px"   
+                        // borderColor="yellow.600"
+                        borderRadius="full"
+                        _hover={{
+                            boxShadow: "dark-lg"
+                          }}
+                   
                         
                     />
+                    </Center>
                     
                 </Box>
                 </Fade>
@@ -61,7 +64,7 @@ const Profile = (props) => {
                     <Text
                         textAlign="left"
                         fontSize={23}
-                        ml={3}
+                        mr={3}
                         fontFamily="Roboto"
                         fontWeight="thin"
                         letterSpacing={0}
@@ -76,7 +79,7 @@ const Profile = (props) => {
                         <br></br>
                         I have a very high work ethic and I like to maintain a good work environment where respect and good communication are essentials values of the team.
                         <br></br>
-                        My greatest desire is to seek personal and professional growth through learning new technologies and new ways of working.
+                        My greatest desire is to seek personal and professional growth through by learning new technologies and new ways of working.
 
                     </Text>
                 </Box>
